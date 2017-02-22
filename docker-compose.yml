@@ -28,9 +28,13 @@ services:
 
   producer:
     image: g
-    command: app producer
+    command: producer
     networks:
       - wut
-    links:
-      - kafka
+
+  consumer:
+    image: g
+    command: consumer
+    networks:
+      - wut
 

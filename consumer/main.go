@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"os"
 	"os/signal"
-
 	"github.com/Shopify/sarama"
 )
 
