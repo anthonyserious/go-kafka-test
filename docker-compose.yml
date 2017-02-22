@@ -26,3 +26,11 @@ services:
       - "ZK_HOSTS=kafka:2181"
       - "APPLICATION_SECRET=wutwut"
 
+  producer:
+    image: g
+    command: app producer
+    networks:
+      - wut
+    links:
+      - kafka
+
